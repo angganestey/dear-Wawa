@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kata-Kata Hari ini</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+    /* Reset and base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      border-radius: 24px;
+      max-width: 480px;
+      padding: 40px 32px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      letter-spacing: 1.4px;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #ffe5eb;
+      letter-spacing: 0.03em;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .heart {
+      font-size: 3rem;
+      color: #ffdde1;
+      animation: heartbeat 1.5s infinite;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+        color: #ffdde1;
+        text-shadow: 0 0 8px #ff5f8b;
+      }
+      50% {
+        transform: scale(1.2);
+        color: #ff428e;
+        text-shadow: 0 0 15px #ff428e;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 32px 24px;
+        max-width: 100%;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card" role="main" aria-label="Kata-kata Hari ini">
+    <div class="heart" aria-hidden="true">❤</div>
+    <h1>Kata-Kata Hari ini</h1>
+    <p>
+      "Kamu bukan hanya milikku,<br />
+      tapi kamu adalah alasan aku tersenyum setiap hari.<br />
+      Tanpamu, dunia ini tak lagi lengkap.<br />
+      Aku cinta kamu, lebih dari kata bisa ungkapkan."
+    </p>
+    <p>
+      "Dalam pelukanmu, aku menemukan rumah yang nyaman.<br />
+      Dalam tatapanmu, aku temukan kedamaian sejati.<br />
+      Semoga kita selalu bersama, menulis cerita cinta yang tak pernah usai."
+     </p>
+    <div class="photo-gallery" aria-label="Foto-foto romantis pasangan">
+      <img src="2BB96FC9-BE49-469D-9D21-4B2379821D56.jpeg" aria-label="Foto pasangan sedang tersenyum" width="140"/>
+      <img src="B73A69B7-D1C3-47EA-A911-3DDB9367478D.jpeg" alt="Foto pasangan lagi bete" width="140"/>
+      <img src="EA5A076A-112D-4F48-B589-0E767F6B1F2D.heic" alt="foto pasangan sedang senang" width="140"/>
+    </div>
+    <div class="heart" aria-hidden="true">❤</div>
+  </div>
+</body>
+</html>
